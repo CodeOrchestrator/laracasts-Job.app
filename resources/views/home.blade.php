@@ -1,0 +1,6 @@
+<x-layout>
+    <x-slot:heading>
+        Home
+    </x-slot:heading>
+    <h1 class="text-white">Hello from home!</h1>
+</x-layout>
