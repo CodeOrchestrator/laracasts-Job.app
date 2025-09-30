@@ -21,7 +21,8 @@ Route::get('/', function () {
 
 Route::get('/jobs', function () {
 
-    $jobs = Job::all();
+    $jobs = Job::with('employer')->simplePaginate(3);
+//    $jobs = Job::all();
 
     return view('jobs', ['jobs' => $jobs]);
 });
